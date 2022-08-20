@@ -1,4 +1,4 @@
-# procovid
+# lab03
 
 ## Project setup
 ```
