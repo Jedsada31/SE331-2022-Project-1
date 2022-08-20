@@ -7,24 +7,24 @@
 </template>
 
 <script>
-import EventService from '@/services/EventService.js'
+import EventService from "@/services/EventService.js";
 
 export default {
-  props: ['id'],
+  props: ["id"],
   data() {
     return {
-      event: null
-    }
+      event: null,
+    };
   },
   created() {
     // fetch event (by id) and set local event data
     EventService.getEvent(this.id)
       .then((response) => {
-        this.event = response.data
+        this.event = response.data;
       })
       .catch((error) => {
-        console.log(error)
-      })
-  }
-}
+        console.log(error);
+      });
+  },
+};
 </script>

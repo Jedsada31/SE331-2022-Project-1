@@ -1,5 +1,5 @@
 <template>
-  <h1>Events For Good</h1>
+  <h1>Vaccine Detail</h1>
   <div class="events">
     <EventCard
       v-for="event in events"
