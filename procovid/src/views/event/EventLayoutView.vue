@@ -6,11 +6,11 @@
         >Patient Details</router-link
       >
       |
-      <router-link class="list" :to="{ name: 'EventRegister' }"
+      <router-link class="list" :to="{ name: 'DoctorComment' }"
         >Doctor Recommendation</router-link
       >
       |
-      <router-link class="list" :to="{ name: 'EventEdit' }"
+      <router-link class="list" :to="{ name: 'VaccineEdit' }"
         >Vaccine Certificate</router-link
       >
     </div>
