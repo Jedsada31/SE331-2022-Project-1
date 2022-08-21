@@ -1,8 +1,8 @@
 <template>
   <h3>Doctor’s comments</h3>
   <form class="review-form" @submit.prevent="onSubmit">
-    <label for="review">Add comment</label>
-    <textarea id="review" v-model="review"></textarea>
+    <label for="comment">Add comment</label>
+    <textarea id="comment" v-model="comment"></textarea>
     <input class="button" type="submit" value="Submit" />
   </form>
 
@@ -36,11 +36,11 @@ export default {
         return;
       }
       let doccomment = {
-        listNumber: "",
-        comment: "",
+        listNumber: (this.countlist += 1),
+        comment: this.comment,
       };
       this.comments.push(doccomment);
-      this.comments = "";
+      this.comment = "";
       //Assuming successful API call to register them
       //set a flash message to appear on the next page loaded which says
       //'You are successfully registerd for' +this.event.title
