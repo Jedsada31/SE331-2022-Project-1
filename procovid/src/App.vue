@@ -2,8 +2,8 @@
   <div id="flashMessage" v-if="GStore.flashMessage">
     {{ GStore.flashMessage }}
   </div>
-  <nav>
-    <router-link to="/vaccine">Home</router-link>
+  <nav class="logo">
+    <router-link to="/">Home</router-link>
     <!-- <router-link to="/about">About</router-link>| -->
     <!-- <router-link to="/aboutt">Vaccine injection</router-link> |
     <router-link to="/">Doctor Recommendation</router-link> | -->
@@ -46,9 +46,18 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  /* color: #42b983; */
 }
 h4 {
   font-size: 20px;
+}
+body {
+  background-image: url("/Users/tanachok/Desktop/conBo/project1/SE331projectMid/procovid/src/assets/Lovepik_com-500940915-medical-background-in-science-and-technology.jpg");
+  background-size: cover;
+}
+.logo {
+  text-align: left;
+  font-size: 50px;
+  color: black;
 }
 </style>
