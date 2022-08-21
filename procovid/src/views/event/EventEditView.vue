@@ -1,13 +1,18 @@
 <template>
-  <p class="ppp">
-    Vaccine: {{ event.vaccine1 }} <br />
-    Date: {{ event.date }} <br />
-    Time: {{ event.time }} <br />
+  <p v-if="event.vaccine[0] != null" class="vaccine1">
+    Vaccine: {{ event.vaccine[0] }} <br />
+    Date: {{ event.date[0] }} <br />
+    Time: {{ event.time[0] }} <br />
   </p>
-  <p class="pppp">
-    Vaccine: {{ event.vaccine2 }} <br />
-    Date: {{ event.date }} <br />
-    Time: {{ event.time }} <br />
+  <p v-if="event.vaccine[1] != null" class="vaccine2">
+    Vaccine: {{ event.vaccine[1] }} <br />
+    Date: {{ event.date[1] }} <br />
+    Time: {{ event.time[1] }} <br />
+  </p>
+  <p v-if="event.vaccine[2] != null" class="vaccine3">
+    Vaccine: {{ event.vaccine[2] }} <br />
+    Date: {{ event.date[2] }} <br />
+    Time: {{ event.time[2] }} <br />
   </p>
 </template>
 
@@ -30,12 +35,17 @@ export default {
 };
 </script>
 <style>
-.ppp {
+.vaccine1 {
   padding: 20px;
   /* border: 1px solid #39495c; */
   margin-bottom: 18px;
 }
-.pppp {
+.vaccine2 {
+  padding: 20px;
+  /* border: 1px solid #39495c; */
+  margin-bottom: 18px;
+}
+.vaccine3 {
   padding: 20px;
   /* border: 1px solid #39495c; */
   margin-bottom: 18px;
