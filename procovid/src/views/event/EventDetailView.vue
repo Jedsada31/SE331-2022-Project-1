@@ -3,7 +3,7 @@
     Name: {{ event.title }} <br />
     Surname: {{ event.surname }} <br />
     Age: {{ event.age }} <br />
-    Address {{ event.location }}
+    Address: {{ event.location }}
   </p>
 </template>
 

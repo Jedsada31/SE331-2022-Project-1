@@ -6,6 +6,7 @@
     <div class="event-card">
       <!-- <span>@{{ event.time }} on {{ event.date }}</span> -->
       <h4>{{ event.patient }}</h4>
+      <span>Number of dose: {{ event.NumberOfVaccine }}</span>
     </div>
   </router-link>
 </template>

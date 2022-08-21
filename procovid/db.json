@@ -2,31 +2,33 @@
     "events": [
       {
         "id": 123,
-        "patient": "patient1 ",
+        "patient": "Patient1 ",
         "title": "jedsada",
         "surname": "Kampen",
         "age": "19",
         "location": "Lumpoon",
         "date": ["January 30, 2022","March 30 2022",null],
         "time": ["10.00","12.30",null],
-        "vaccine":["Sinovac","AstraZeneca",null]
+        "vaccine":["Sinovac","AstraZeneca",null],
+        "NumberOfVaccine": "2"
         
       },
       {
         "id": 456,
-        "patient": "patient2 ",
+        "patient": "Patient2 ",
         "title": "Panuwat",
         "surname":"Panyo",
         "age":"21",
         "location": "Chiang mai",
         "date": ["January 11, 2022","March 25 2022","May 16 2022"],
         "time": ["10.00","12.30","15.00"],
-        "vaccine":["Pfizer","AstraZeneca","Moderna"]
-        
+        "vaccine":["Pfizer","AstraZeneca","Moderna"],
+        "NumberOfVaccine": "3"
+
       },
       {
         "id": 789,
-        "patient": "patient3 ",
+        "patient": "Patient3 ",
         "category": "sustainability",
         "title": "Sawittree",
         "surname": "Kuntawong",
@@ -34,41 +36,49 @@
         "location": "Samutsakorn",
         "date": ["May 28, 2021","July 27 2021",null],
         "time": ["12:00","13.30"],
-        "vaccine":["Pfizer","Moderna",null]
+        "vaccine":["Pfizer","Moderna",null],
+        "NumberOfVaccine": "2"
+
       },
       {
         "id": 1001,
-        "patient": "patient4 ",
+        "patient": "Patient4 ",
         "title": "Pantongtae",
         "surname": "hinchaiyaphum",
         "age":"22",
         "location": "Chaiyaphum",
         "date": ["January 28, 2022","March 28 2022",null],
         "time": ["12:00","13.30",null],
-        "vaccine":["Pfizer","Pfizer",null]
+        "vaccine":["Pfizer","Pfizer",null],
+        "NumberOfVaccine": "2"
+
       },
       {
         "id": 1002,
-        "patient": "patient5 ",
+        "patient": "Patient5 ",
         "title": "Kunnalee",
         "surname": "Srisuwan",
         "age":"21",
         "location": "Bankkok",
         "date": ["January 28, 2022","March 28 2022",null],
         "time": ["12:00","11.30",null],
-        "vaccine":["Sinopharm","Moderna",null]
+        "vaccine":["Sinopharm","Moderna",null],
+        "NumberOfVaccine": "2"
+
 
       },
       {
         "id": 1003,
-        "patient": "patient6 ",
+        "patient": "Patient6 ",
         "title": "ponkrit",
         "surname": "Samsan",
         "age":"47",
         "location": "Bankkok",
         "date": ["January 28, 2022","March 28 2022","July 11 2022"],
         "time": ["12:00","13.30","9.30"],
-        "vaccine":["Pfizer","Moderna","Sinopharm"]
+        "vaccine":["Pfizer","Moderna","Sinopharm"],
+        "NumberOfVaccine": "3"
+
       }
     ]
   }
