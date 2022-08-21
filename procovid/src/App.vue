@@ -3,10 +3,10 @@
     {{ GStore.flashMessage }}
   </div>
   <nav>
-    <router-link to="/vaccine">Vacccine Detail</router-link> |
+    <router-link to="/vaccine">Home</router-link>
     <!-- <router-link to="/about">About</router-link>| -->
-    <router-link to="/aboutt">Vaccine injection</router-link> |
-    <router-link to="/">Doctor Recommendation</router-link> |
+    <!-- <router-link to="/aboutt">Vaccine injection</router-link> |
+    <router-link to="/">Doctor Recommendation</router-link> | -->
   </nav>
   <router-view />
 </template>

@@ -1,6 +1,14 @@
 <template>
-  <p>Edit the event here</p>
-  <button @click="register">Edit Me</button>
+  <p class="ppp">
+    Vaccine: {{ event.vaccine1 }} <br />
+    Date: {{ event.date }} <br />
+    Time: {{ event.time }} <br />
+  </p>
+  <p class="pppp">
+    Vaccine: {{ event.vaccine2 }} <br />
+    Date: {{ event.date }} <br />
+    Time: {{ event.time }} <br />
+  </p>
 </template>
 
 <script>
@@ -21,3 +29,15 @@ export default {
   },
 };
 </script>
+<style>
+.ppp {
+  padding: 20px;
+  /* border: 1px solid #39495c; */
+  margin-bottom: 18px;
+}
+.pppp {
+  padding: 20px;
+  /* border: 1px solid #39495c; */
+  margin-bottom: 18px;
+}
+</style>

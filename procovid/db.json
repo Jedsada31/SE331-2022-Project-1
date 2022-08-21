@@ -2,17 +2,22 @@
     "events": [
       {
         "id": 123,
+        "patient": "patient1 ",
         "category": "animal welfare",
-        "title": "jameee",
-        "description": "Find your new feline friend at this event.",
+        "title": "jedsada",
+        "surname": "Kampen",
+        "age": "19",
         "location": "Meow Town",
         "date": "January 28, 2022",
         "time": "12:00",
         "petsAllowed": true,
-        "organizer": "Kat Laydee"
+        "organizer": "Kat Laydee",
+        "vaccine1": "pfizer",
+        "vaccine2": "astrazeneca"
       },
       {
         "id": 456,
+        "patient": "patient2 ",
         "category": "food",
         "title": "Community Gardening",
         "description": "Join us as we tend to the community edible plants.",
@@ -24,6 +29,7 @@
       },
       {
         "id": 789,
+        "patient": "patient3 ",
         "category": "sustainability",
         "title": "Beach Cleanup",
         "description": "Help pick up trash along the shore.",
@@ -35,6 +41,7 @@
       },
       {
         "id": 1001,
+        "patient": "patient4 ",
         "category": "animal welfare",
         "title": "Dog Adoption Day",
         "description": "Find your new canine friend at this event.",
@@ -46,6 +53,7 @@
       },
       {
         "id": 1002,
+        "patient": "patient5 ",
         "category": "food",
         "title": "Canned Food Drive",
         "description": "Bring your canned food to donate to those in need.",
@@ -57,6 +65,7 @@
       },
       {
         "id": 1003,
+        "patient": "patient6 ",
         "category": "sustainability",
         "title": "Highway Cleanup",
         "description": "Help pick up trash along the highway.",
