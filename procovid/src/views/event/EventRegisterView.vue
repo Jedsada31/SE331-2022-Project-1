@@ -1,21 +1,22 @@
 <template>
-  <h3>Doctor’s comments</h3>
-  <form class="review-form" @submit.prevent="onSubmit">
-    <label for="comment">Add comment</label>
-    <textarea id="comment" v-model="comment"></textarea>
-    <input class="button" type="submit" value="Submit" />
-  </form>
+  <div id="box-comment">
+    <form class="review-form" @submit.prevent="onSubmit">
+      <label for="comment">Add comment</label>
+      <textarea id="comment" v-model="comment"></textarea>
+      <input class="button" type="submit" value="Submit" />
+    </form>
 
-  <div class="review-container">
-    <h3>Reviews:</h3>
-    <ul>
-      <li v-for="(com, index) in comments" :key="index">
-        Comment {{ com.listNumber }}
-        <br />
-        "{{ com.comment }}"
-        <br />
-      </li>
-    </ul>
+    <div class="review-container">
+      <h3>Doctor’s comments</h3>
+      <ul>
+        <li v-for="(com, index) in comments" :key="index">
+          Comment {{ com.listNumber }}
+          <br />
+          "{{ com.comment }}"
+          <br />
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -81,7 +82,7 @@ export default {
   flex-direction: column;
   width: 425px;
   padding: 20px;
-  margin: 40px;
+  margin: 1rem 0 0 0;
   border: 2px solid #d8d8d8;
   background-color: white;
   -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
@@ -96,7 +97,7 @@ export default {
   -webkit-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
   box-shadow: 2px 20px -12px rgba(0, 0, 0, 0.57);
-  margin-left: 40px;
+  margin: 1rem;
   border: 2px solid #d8d8d8;
 }
 
@@ -107,6 +108,12 @@ export default {
 .review-form .button {
   display: block;
   margin: 30px auto;
+}
+
+#box-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 textarea {

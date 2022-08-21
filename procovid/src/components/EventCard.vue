@@ -29,6 +29,7 @@ export default {
   border: 1px solid #39495c;
   margin-bottom: 18px;
   background-color: rgb(30, 217, 186);
+  border-radius: 25px;
 }
 
 .event-card:hover {

@@ -52,7 +52,7 @@ h4 {
   font-size: 20px;
 }
 body {
-  background-image: url("~assets/Lovepik_com-500940915-medical-background-in-science-and-technology.jpg");
+  background-image: url("~@/assets/background.jpg");
   background-size: cover;
 }
 .logo {
