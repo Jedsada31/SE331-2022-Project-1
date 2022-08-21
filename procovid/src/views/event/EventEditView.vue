@@ -1,19 +1,21 @@
 <template>
-  <p v-if="event.vaccine[0] != null" class="vaccine1">
-    Vaccine: {{ event.vaccine[0] }} <br />
-    Date: {{ event.date[0] }} <br />
-    Time: {{ event.time[0] }} <br />
-  </p>
-  <p v-if="event.vaccine[1] != null" class="vaccine2">
-    Vaccine: {{ event.vaccine[1] }} <br />
-    Date: {{ event.date[1] }} <br />
-    Time: {{ event.time[1] }} <br />
-  </p>
-  <p v-if="event.vaccine[2] != null" class="vaccine3">
-    Vaccine: {{ event.vaccine[2] }} <br />
-    Date: {{ event.date[2] }} <br />
-    Time: {{ event.time[2] }} <br />
-  </p>
+  <div id="vaccine-box">
+    <p v-if="event.vaccine[0] != null" class="vaccine1">
+      Vaccine: {{ event.vaccine[0] }} <br />
+      Date: {{ event.date[0] }} <br />
+      Time: {{ event.time[0] }} <br />
+    </p>
+    <p v-if="event.vaccine[1] != null" class="vaccine2">
+      Vaccine: {{ event.vaccine[1] }} <br />
+      Date: {{ event.date[1] }} <br />
+      Time: {{ event.time[1] }} <br />
+    </p>
+    <p v-if="event.vaccine[2] != null" class="vaccine3">
+      Vaccine: {{ event.vaccine[2] }} <br />
+      Date: {{ event.date[2] }} <br />
+      Time: {{ event.time[2] }} <br />
+    </p>
+  </div>
 </template>
 
 <script>
@@ -49,5 +51,12 @@ export default {
   padding: 20px;
   /* border: 1px solid #39495c; */
   margin-bottom: 18px;
+}
+
+p {
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 35px;
+  width: 550px;
 }
 </style>

@@ -6,6 +6,7 @@
     <div class="event-card">
       <!-- <span>@{{ event.time }} on {{ event.date }}</span> -->
       <h4>{{ event.patient }}</h4>
+      <span>Number of dose: {{ event.NumberOfVaccine }}</span>
     </div>
   </router-link>
 </template>
@@ -27,6 +28,9 @@ export default {
   cursor: pointer;
   border: 1px solid #39495c;
   margin-bottom: 18px;
+  background-color: rgb(30, 217, 186);
+  border-radius: 25px;
+  margin: 20px;
 }
 
 .event-card:hover {
