@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import EventListView from "@/views/EventListView.vue";
+// import EventListView from "@/views/EventListView.vue";
 import EventEditView from "@/views/event/EventEditView.vue";
 import EventRegisterView from "@/views/event/EventRegisterView.vue";
 import AboutView from "../views/AboutView.vue";
@@ -10,14 +10,9 @@ import NetWorkErrorView from "@/views/NetworkErrorView.vue";
 import NProgress from "nprogress";
 import EventService from "@/services/EventService.js";
 import GStore from "@/store";
+import DoctorDetail from "@/views/DoctorView.vue";
 import VaccineDetial from "@/views/VaccineDetail.vue";
 const routes = [
-  {
-    path: "/",
-    name: "EventList",
-    component: EventListView,
-    props: (route) => ({ page: parseInt(route.query.page) || 1 }),
-  },
   {
     path: "/",
     name: "EventList",
@@ -29,7 +24,11 @@ const routes = [
     name: "about",
     component: AboutView,
   },
-
+  {
+    path: "/aboutt",
+    name: "aboutt",
+    component: DoctorDetail,
+  },
   {
     path: "/event/:id",
     name: "EventLayoutView",
@@ -56,19 +55,19 @@ const routes = [
     },
     children: [
       {
-        path: "Patient",
+        path: "",
         name: "EventDetails",
         component: EventDetailView,
         props: true,
       },
       {
-        path: "DoctorRecommendation",
+        path: "register",
         name: "EventRegister",
         props: true,
         component: EventRegisterView,
       },
       {
-        path: "VaccineCertificate ",
+        path: "edit",
         name: "EventEdit",
         props: true,
         component: EventEditView,

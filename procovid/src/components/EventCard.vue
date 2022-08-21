@@ -30,6 +30,7 @@ export default {
   margin-bottom: 18px;
   background-color: rgb(30, 217, 186);
   border-radius: 25px;
+  margin: 20px;
 }
 
 .event-card:hover {
