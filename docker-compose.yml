@@ -3,4 +3,4 @@ services:
     web:
         image: "tanachok/project-t2:latest"
         ports: 
-            - 8011:80 
+            - 8005:80 
