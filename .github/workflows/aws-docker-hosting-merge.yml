@@ -28,7 +28,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: tanachok/project-t1:latest
+          tags: tanachok/project-t2:latest
       - 
         name: docker compose
         uses: alex-ac/github-action-ssh-docker-compose@master
