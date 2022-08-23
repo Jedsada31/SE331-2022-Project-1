@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3004',
+  baseURL: process.env.VUE_APP_BACKEND_URL,
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -13,6 +13,7 @@ export default {
   getEvents(perPage, page) {
     return apiClient.get('/events?_limit=' + perPage + '&_page=' + page)
   },
+  //Added new call
   getEvent(id) {
     return apiClient.get('/events/' + id)
   }
