@@ -12,8 +12,8 @@
 </template>
 <script>
 export default {
-  inject: ["GStore"],
-};
+  inject: ['GStore']
+}
 </script>
 <style>
 @keyframes yellowfade {
@@ -52,7 +52,7 @@ h4 {
   font-size: 20px;
 }
 body {
-  background-image: url("~@/assets/background.jpg");
+  background-image: url('~@/assets/background.jpg');
   background-size: cover;
 }
 .logo {

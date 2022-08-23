@@ -1,7 +1,8 @@
 <template>
-  <h1>Events For Good</h1>
+  <h1>Vaccine Detail</h1>
   <div class="events">
     <EventCard
+      class="event"
       v-for="event in events"
       :key="event.id"
       :event="event"
@@ -31,25 +32,25 @@
 
 <script>
 // @ is an alias to /src
-import EventCard from "@/components/EventCard.vue";
-import EventService from "@/services/EventService.js";
+import EventCard from '@/components/EventCard.vue'
+import EventService from '@/services/EventService.js'
 //import { watchEffect } from '@vue/runtime-core'
 export default {
-  name: "EventListView",
+  name: 'EventListView',
   props: {
     page: {
       type: Number,
-      required: true,
-    },
+      required: true
+    }
   },
   components: {
-    EventCard,
+    EventCard
   },
   data() {
     return {
       events: null,
-      totalEvents: 0,
-    };
+      totalEvents: 0
+    }
   },
   // created() {
   //   watchEffect(() => {
@@ -66,48 +67,60 @@ export default {
     EventService.getEvents(3, parseInt(routeTo.query.page) || 1)
       .then((response) => {
         next((comp) => {
-          comp.events = response.data;
-          comp.totalEvents = response.headers["x-total-count"];
-        });
+          comp.events = response.data
+          comp.totalEvents = response.headers['x-total-count']
+        })
       })
       .catch(() => {
-        next({ name: "NetworkError" });
-      });
+        next({ name: 'NetworkError' })
+      })
   },
   beforeRouteUpdate(routeTo, routeFrom, next) {
     EventService.getEvents(3, parseInt(routeTo.query.page) || 1)
       .then((response) => {
-        this.events = response.data;
-        this.totalEvents = response.headers["x-total-count"];
-        next();
+        this.events = response.data
+        this.totalEvents = response.headers['x-total-count']
+        next()
       })
       .catch(() => {
-        next({ name: "NetworkError" });
-      });
+        next({ name: 'NetworkError' })
+      })
   },
   computed: {
     hasNextPage() {
-      let totalPages = Math.ceil(this.totalEvents / 3);
-      return this.page < totalPages;
-    },
-  },
-};
+      let totalPages = Math.ceil(this.totalEvents / 3)
+      return this.page < totalPages
+    }
+  }
+}
 </script>
 <style scoped>
 .events {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: inline-block;
 }
 .pagination {
+  /* text-align: right; */
   display: flex;
-  width: 290px;
+  width: 830px;
+  font-size: 25px;
+  border: 1px #39495c;
+  /* margin-bottom: 18px; */
+  /* background-color: rgb(245, 252, 251); */
+  border-radius: 25px;
 }
 
 .pagination a {
   flex: 1;
+  /* display: flex; */
   text-decoration: none;
-  color: #2c3e50;
+  color: #000000;
+  /* border: 1px #39495c;
+  margin-bottom: 18px;
+  background-color: rgb(245, 252, 251); */
+  /* border-radius: 25px; */
 }
 
 #page-prev {
@@ -116,5 +129,8 @@ export default {
 
 #page-next {
   text-align: right;
+}
+.event {
+  display: inline-block;
 }
 </style>

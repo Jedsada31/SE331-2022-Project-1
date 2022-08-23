@@ -9,8 +9,8 @@
 
 <script>
 export default {
-  props: ["id", "event"],
-};
+  props: ['id', 'event']
+}
 </script>
 <style>
 #info {

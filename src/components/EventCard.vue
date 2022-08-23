@@ -12,14 +12,14 @@
 </template>
 <script>
 export default {
-  name: "EventCard",
+  name: 'EventCard',
   props: {
     event: {
       type: Object,
-      required: true,
-    },
-  },
-};
+      required: true
+    }
+  }
+}
 </script>
 <style scoped>
 .event-card {

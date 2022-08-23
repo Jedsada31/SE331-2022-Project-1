@@ -22,42 +22,42 @@
 
 <script>
 export default {
-  props: ["id", "event"],
-  inject: ["GStore"], //<---Inject the Global Store
+  props: ['id', 'event'],
+  inject: ['GStore'], //<---Inject the Global Store
   data() {
     return {
       countlist: 0,
-      comments: [],
-    };
+      comments: []
+    }
   },
   methods: {
     onSubmit() {
-      if (this.name === "" || this.review === "" || this.rating === null) {
-        alert("Review is incomplete. Please fill out every field.");
-        return;
+      if (this.name === '' || this.review === '' || this.rating === null) {
+        alert('Review is incomplete. Please fill out every field.')
+        return
       }
       let doccomment = {
         listNumber: (this.countlist += 1),
-        comment: this.comment,
-      };
-      this.comments.push(doccomment);
-      this.comment = "";
+        comment: this.comment
+      }
+      this.comments.push(doccomment)
+      this.comment = ''
       //Assuming successful API call to register them
       //set a flash message to appear on the next page loaded which says
       //'You are successfully registerd for' +this.event.title
       this.GStore.flashMessage =
-        "You are successfully commented for " + this.event.title;
+        'You are successfully commented for ' + this.event.title
       setTimeout(() => {
         //After 3 seconds remove it
-        this.GStore.flashMessage = "";
-      }, 3000);
+        this.GStore.flashMessage = ''
+      }, 3000)
       this.$router.push({
-        name: "EventRegister",
-        params: { id: this.event.id },
-      });
-    },
-  },
-};
+        name: 'EventRegister',
+        params: { id: this.event.id }
+      })
+    }
+  }
+}
 </script>
 
 <style>
