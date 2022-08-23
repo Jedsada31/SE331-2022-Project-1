@@ -2,7 +2,7 @@ name: Deploy to Aws Docker on mege
 'on':
   push:
     branches:
-      - dev
+      - main
 jobs:
   docker:
     runs-on: ubuntu-latest
