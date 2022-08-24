@@ -1,24 +1,18 @@
-# lab03
+# Project For 331 
 
-## Project setup
-```
-npm install
-```
+## Group Member
+1: Tanachok Doungsatan 632115020 
+2: Jedsada Kampen 632115012
+3: Wathanyu Suliamma 632115037
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### For the vm Depoly 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+You can fix with secret HOST_SERVER
+ in setting  we make it with branches prod-docker 
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Firebase 
+
+we make it with branches prod 
+
+
